@@ -1,0 +1,82 @@
+body.bg
+{
+	background-image: url("/Etourism/images/pic8.jpg");
+}
+a{
+	text-decoration: none;
+	font-family: fantasy;	
+}
+a:LINK {
+	color:blue;
+}
+a:VISITED {
+	color: olive;
+}
+a:HOVER {
+	color: yellow;
+}
+a:ACTIVE {
+	color: green;
+}
+@FONT-FACE{
+	font-family:myfont;
+	src:url("/Etalent/fonts/Aulyars Italic.otf")
+}
+.fnt{
+	font-family:myfont;
+	color:#804000;
+	font-size:40px;
+	font-weight: bold;
+    font-style:italic;
+    text-align: center;
+}
+.font{
+	font-family:myfont;
+	color:white;
+	font-size:40px;
+	font-weight: bold;
+    font-style:italic;
+    text-align: center;
+}
+
+.dec{
+font-size:30px;
+border-radius: 30px;
+color: red;
+font-weight: bold;
+font-style:italic;
+text-align: center;
+}
+.global{
+	border-radius: 20px;
+	color:navy;
+	background-color:infobackground;
+	font-family: cursive; 
+	width:250px;
+}
+p{
+	color:black;
+	font-size: 20px;
+	font-family: Bradley Hand ITC;
+	text-align: center;
+}
+th{
+color:purple;
+text-align: center;
+text-transform:capitalize;
+font-family: Bradley Hand ITC;
+font-size: 20px;
+}
+.td{
+	margin-left:20px
+	color:#dca9a0;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: monospace;
+	font-size: 22px;
+}
+.table{
+	border-radius: 20px;
+	background-color:threedlightshadow;
+	width:700px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="/Etalent/bootfiles/bootstrap.min.js"></script>
+<link rel="stylesheet"  href="/Etalent/bootfiles/bootstrap.min.css"> 
+<script src="/Etalent/bootfiles/jquery-3.1.1.min.js"></script>
+<script>
+$(document).ready(function()
+		{
+	      $("#div").click(function()
+	    		  {
+	    			$("#divright").load("/Etalent/jsp/searchcand.jsp");  
+	    		  });
+	    });
+</script>
+<script>
+$(document).ready(function()
+		{
+	      $("#btnartist").click(function()
+	    		  {
+	    			window.location.href="/Etalent/html/Artists.html";
+	    		  });
+	      $("#btnvideo").click(function()
+	    		  {
+	    			window.location.href="/Etalent/html/videos.html";
+	    		  });
+	      $("#btninstitute").click(function()
+	    		  {
+	    			window.location.href="/Etalent/html/institution.html";
+	    		  });
+		});
+</script>
+
+<title>Home</title>
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+</head>
+<link rel="stylesheet" type="text/css" href="/Etalent/css/mystyle.css">
+<body style="margin: 0px">
+<div style= "background-color:#baabee;width:100% ;height:1000px">
+<div style= "width:100% ;height:200px">
+<img src="/Etalent/images/talent hunt.jpg" style="height: 100%;width: 100%"></div>
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/Etalent/html/Etalent.html">E-Talent Hunt</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/Etalent/jsp/login.jsp">Login</a></li>
+      <li><a href="/Etalent/jsp/registration.jsp">Candidates Registration</a></li>
+      <li><a href="/Etalent/jsp/registrationProf.jsp">Professionals Registration</a></li>
+      <li><a href="/Etalent/jsp/viewevents.jsp">View Events</a></li>
+      <li><a id="div" href="#"><span class="glyphicon glyphicon-search"></span>Search Candidates</a></li>
+      <li><a href="/Etalent/jsp/endfeedback.jsp">Feedback</a></li>
+    </ul>
+       </div>
+</nav>
+<div style="background-color:grey; width:25% ;height:700px;float:left;margin:0px">
+<div style="background-color: silver;width:100%;height: 50%;float:left">
+<video src="/Etalent/videos/art3.mp4" controls="controls" loop="loop" autoplay="autoplay" style="width:100%;height:100%;float: left" align="center">
+</video>
+</div>
+<div style="background-color:grey; ;width:100%;height: 50%;float:left">
+<br><button id="btnartist" type="submit" class="btn btn-info">Famous Artists</button><br>
+<br><button id="btnvideo" type="submit" class="btn btn-warning">Famous Videos</button><br>
+<br><button id="btninstitute" type="submit" class="btn btn-primary">Famous Institutes</button>
+
+</div>
+</div>
+<div id="divright" style="background-color:#baabee;height: 700px;width:70%;float: left;margin-left: 50px">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="/Etalent/images/pic1.jpg" alt="Chania" style=" width:950px ;height:700px">
+          </div>
+
+      <div class="item">
+        <img src="/Etalent/images/pic2.jpg" alt="Chania"style=" width:950px ;height:700px">
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+<div style= "background-color:#cdadda; width:100% ;height:100px;float:left;">
+<h2 style="font-family: monospace">Created by Tripti Singh and Shweta Singh</h2>
+</div>
+</body>
+</html>

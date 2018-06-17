@@ -1,0 +1,115 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Artists Details</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="/Etalent/bootfiles/bootstrap.min.js"></script>
+<script src="/Etalent/bootfiles/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet"  href="/Etalent/bootfiles/bootstrap.min.css"> 
+<link rel="stylesheet" type="text/css" href="/Etalent/css/mystyle.css">
+<link rel="stylesheet" href="/Etalent/css/jquery-ui.css">
+<script src="/Etalent/js/jquery-ui.js"></script>
+<script>
+$(document).ready(function()
+		{
+	      $("#music1").click(function()
+	    		  {
+	    			$("#divright").load("/Etalent/html/artists/ARRahman.html");  
+	    		  });
+	      $("#music2").click(function()
+	    		  {
+  			        $("#divright").load("/Etalent/html/artists/Bismillah.html");  
+	    		  });
+	      $("#music3").click(function()
+	    		  {
+  			        $("#divright").load("/Etalent/html/artists/Taylor.html");  
+	    		  });
+	      $("#music4").click(function()
+	    		  {
+  			        $("#divright").load("/Etalent/html/artists/Zakir.html");  
+	    		  });
+
+	      $("#dance1").click(function()
+	    		  {
+  			        $("#divright").load("/Etalent/html/artists/Birju.html");  
+	    		  });
+	      $("#dance2").click(function()
+	    		  {
+		        $("#divright").load("/Etalent/html/artists/Lewis.html");  
+	    		  });
+	      $("#dance3").click(function()
+	    		  {
+		        $("#divright").load("/Etalent/html/artists/Spears.html");  
+	    		  });
+	      $("#art1").click(function()
+	    		  {
+		            $("#divright").load("/Etalent/html/artists/Tagore.html");  
+	    		  });
+	      $("#art2").click(function()
+	    		  {
+		            $("#divright").load("/Etalent/html/artists/Vinci.html");  
+  	    		  });
+	      $("#art3").click(function()
+	    		  {
+		            $("#divright").load("/Etalent/html/artists/Picasso.html");  
+	    		  });
+	           
+		});
+</script>
+</head>
+<body style="margin: 0px">
+<div style= "background-color:grey; width:100% ;height:1000px">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" style= "width:100% ;height:80px">
+  <h2 align="center" style="color: white">Artist's Details</h2>
+  </div>
+</nav>
+<div style="background-color:grey; width:20% ;height:900px;float:left;margin:0px">
+  <div id="accordion">
+  <h2 class="dec">Music</h2>
+  <div style="background-color: cyan">
+    <div id="music1">A.R. Rahman</div><br>
+    <div id="music2">Bismillah Khan</div><br>
+    <div id="music3">Taylor Swift</div><br>
+    <div id="music4">Zakir Hussain</div><br>
+  </div>
+  <h2 class="dec">Dance</h2>
+  <div style="background-color: cyan"> 
+     <div id="dance1">Pandit Birju Maharaja</div><br>
+     <div id="dance2">Terence Lewis</div><br>
+     <div id="dance3">Britney Spears</div><br>
+  </div>
+  <h2 class="dec">Art</h2>
+  <div style="background-color: cyan">
+    <div id="art1">Abanindranath Tagore</div><br>
+    <div id="art2">Leonardo da Vinci</div><br>
+    <div id="art3">Pablo Picasso</div>
+  </div>
+  </div>
+  <div style="background-color:white; width:100% ;height:350px;float:left;margin:0px">
+  <img src="/Etalent/images/pic6.jpg" style="height:100%;width: 100%" id="img1">
+ </div>
+</div>
+<div id="divright" style= "background-color:grey; width:80% ;height:900px;float:left;margin:0px">
+
+</div>
+
+</div>
+<div style= "background-color:#cdadda; width:100% ;height:100px;float:left">
+<h2 style="font-family: monospace">Created by Tripti Singh and Shweta Singh</h2>
+</div>
+<script>
+$( "#accordion").accordion({
+	
+	 /* animate:500  */
+	heightStyle: "fill"/*content*/,
+	background:"green"
+});
+	
+
+</script>
+
+</body>
+</html>
